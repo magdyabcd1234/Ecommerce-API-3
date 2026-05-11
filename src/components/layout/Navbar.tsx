@@ -44,7 +44,11 @@ export default function Navbar() {
 
   <div className='md:block'>
             <SignedOut>
-              <SignInButton className="bg-red-500 rounded-md text-white px-3 py-1 cursor-pointer"/>
+              <SignInButton mode="modal">
+              <button className="bg-red-500 rounded-md text-white px-3 py-1 cursor-pointer">
+               Sign in
+               </button>
+            </SignInButton>
               </SignedOut>
              <SignedIn>
              <UserButton />
